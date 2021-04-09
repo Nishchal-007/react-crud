@@ -1,11 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import BlogList from "./BlogList";
 import useFetch from "./useFetch";
+import { useHistory } from "react-router-dom";
 
 const Home = () => {
+    const history = useHistory();
+
     const { error, isLoading, data: lt } = useFetch(
         "http://localhost:1234/blogs"
     );
+
+    const handleDelete = (id) => {
+        fetch("http://localhost:1234/blogs/" + id, {
+            method: "DELETE",
+        }).then(() => history.push("/"));
+    };
 
     return (
         <div>
@@ -24,7 +33,7 @@ const Home = () => {
             {lt && (
                 <>
                     <h1 style={{ marginBottom: "35px" }}>Blogs</h1>
-                    <BlogList blogs={lt} />
+                    <BlogList blogs={lt} handleDelete={handleDelete} />
                 </>
             )}
         </div>

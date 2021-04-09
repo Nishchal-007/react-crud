@@ -117,3 +117,60 @@ a {
     box-shadow: 7px 12px 12px 0px rgba(0, 0, 0, 0.72);
     transition: ease-in 0.25s;
 }
+
+/* Create Blog Styles */
+
+.actualForm {
+    padding: 25px;
+}
+
+label {
+    padding: 10px;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.actualForm input {
+    padding: 12px 12px;
+    display: block;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+input:focus {
+    border: none;
+    border-radius: 25px;
+}
+
+textarea {
+    padding: 8px 12px;
+    display: block;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+textarea:focus {
+    border: none;
+    border-radius: 25px;
+}
+
+.actualForm button {
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: #8e44ad;
+    transition: ease-out 0.25s;
+}
+
+.actualForm button:hover {
+    cursor: pointer;
+    box-shadow: 7px 12px 12px 0px rgba(0, 0, 0, 0.72);
+    transition: ease-in 0.25s;
+}

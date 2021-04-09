@@ -31,3 +31,8 @@ function App() {
 }
 
 export default App;
+
+/*
+npm install -g json-server
+To run JSON server: npx json-server --watch data/db.json --port 1234
+*/
